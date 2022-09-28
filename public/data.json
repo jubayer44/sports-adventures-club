@@ -1,0 +1,75 @@
+[
+    {
+        "name": "Cricket",
+        "img": "https://cdn.thetealmango.com/wp-content/uploads/2021/12/image_1541.png",
+
+        "description": "Over 2.5 billion people throughout the world follow cricket. England, India, Pakistan, and Australia are some of the countries where the game is most popular. There are two teams, a bat, a huge circular field, and scoring runs much as in baseball.",
+        
+        "Followers": "2.5 Billion",
+        "time": 30
+    },
+    {
+        "name": "Football",
+        "img": "https://cdn.thetealmango.com/wp-content/uploads/2021/12/image_1540.png",
+
+        "description": "The most valuable player is the one who makes the most players valuable. To do things you've never done before, you have to do things you've never done before. Winners never quit and quitters never win. Set your goals high, and don't stop till you get there.",
+        "Followers": "3.5 Billion",
+        "time": 30
+    },
+    {
+        "name": "Basketbal",
+        "img": "https://cdn.thetealmango.com/wp-content/uploads/2021/12/image_1546.png",
+
+        "description": "Basketball as a sport has been grown in recent times. Basketball, unlike soccer and cricket, isn't a centuries-old sport with a rich history. It started in the late 19th-century but is now a global sport with a worldwide following. In terms of basketball fandom, the United States, Canada, Japan, and China make up the bulk of those that follow the sport.",
+        "Followers": " 2.4 Billion",
+        "time": 20
+    },
+    {
+        "name": "Hockey",
+        "img": "https://cdn.thetealmango.com/wp-content/uploads/2021/12/image_1542.png",
+
+        "description": "Ice hockey and field hockey are the two forms of this game. Ice Hockey is popular in the United States and Canada, however, in India and Pakistan, it's common to play field hockey. Hockey isn't quite as large a goliath as some of the other sports on our list when it comes to money.",
+        "Followers": "2 Billion",
+        "time": 35
+    },
+    {
+        "name": "Tennis",
+        "img": "https://cdn.thetealmango.com/wp-content/uploads/2021/12/image_1543.png",
+
+        "description": "Tennis is played by an estimated 60 million men and women worldwide, according to a list by Topend Sports, making it the most popular individual sport in the world. Due to its widespread acceptance, the sport's doubles form is also prevalent in many countries.",
+        "Followers": "1 Billion",
+        "time": 20
+    },
+    {
+        "name": "Badminton ",
+        "img": "https://cdn.thetealmango.com/wp-content/uploads/2021/12/image_1549.png",
+
+        "description": "Some people may be surprised to get to know that badminton is one of the world's most popular sports. There are an estimated 220 million individuals who regularly participate in this indoor sport. Badminton is an immensely popular sport. It is a prominent sport in Asia, where many of the greatest players in the history of the sport originated from.",
+        "Followers": "950 Million",
+        "time": 15
+    },
+    {
+        "name": "Volleyball",
+        "img": "https://cdn.thetealmango.com/wp-content/uploads/2021/12/image_1548.png",
+
+        "description": "Volleyball may not be as popular as some of the other sports on our list, but it's still a distinct and interesting sport. Popularity-wise, volleyball is one of the most evenly distributed sports. That means, it is watched in usually every country in the world.",
+        "Followers": "900 Million",
+        "time": 20
+    },
+    {
+        "name": "Table Tennis",
+        "img": "https://cdn.thetealmango.com/wp-content/uploads/2021/12/image_1547.png",
+
+        "description": "In terms of popularity, table tennis is among the world's most popular sports. There are people of different ages, fitness levels, and backgrounds playing it all around the world. It's a game that doesn't have a lot of opportunities for professional showcases of ability.",
+        "Followers": "875 Million",
+        "time": 15
+    },
+    {
+        "name": "Baseball ",
+        "img": "https://cdn.thetealmango.com/wp-content/uploads/2021/12/image_1545.png",
+
+        "description": "Baseball, the national pastime of the United States, is included on the list despite its regional popularity. It used to be America's most-watched sport, but football has recently supplanted it (and may soon pass to basketball).",
+        "Followers": "500 Million",
+        "time": 35
+    }
+]
