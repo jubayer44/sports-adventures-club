@@ -50,3 +50,27 @@
 .person-info h4 {
     color: rgba(41, 39, 39, 0.651);
 }
+
+.person-info .kg {
+    line-height: 10px;
+    padding-top: 10px;
+}
+
+/* @media screen and (max-width: 992px and min-width:767px) {
+    .home {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        background-color: red;
+
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        
+
+    }
+}
+

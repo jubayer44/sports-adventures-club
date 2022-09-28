@@ -3,6 +3,7 @@ import './Home.css';
 import img from '../Images/Logo.png';
 import myPic from '../Images/myPic.jpg'
 import Card from '../Card/Card';
+import Calculate from '../Calculate/Calculate';
 
 const Home = () => {
     return (
@@ -26,19 +27,22 @@ const Home = () => {
                 </div>
             </div>
             <div className='person-info'>
-                    <div>
+                    <div className='kg'>
                         <p><span>65</span> kg</p>
                         <h4>Weight</h4>
                     </div>
-                    <div>
+                    <div className='kg'>
                         <p><span>5.8</span> inc</p>
                         <h4>Height</h4>
                     </div>
-                    <div>
+                    <div className='kg'>
                         <p><span>22</span>yrs</p>
                         <h4>Age</h4>
                     </div>
                 </div>
+            <div>
+                <Calculate/>
+            </div>
             </div>
         </div>
     );

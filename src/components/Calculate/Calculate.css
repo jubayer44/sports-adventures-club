@@ -1,0 +1,50 @@
+.break-min {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+}
+
+.break-min p {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.break-min p:hover {
+    background-color: rgb(250, 28, 65);
+}
+
+.sport-time, .break-time{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.activity-btn {
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color:rgb(53, 73, 250);
+    color: white;
+    font-weight: 600px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.activity-btn:hover {
+    background-color: rgb(250, 28, 65);
+}
+
