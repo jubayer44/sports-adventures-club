@@ -1,0 +1,23 @@
+.home {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.card-container {
+    width: 85%;
+    margin: 0 auto;
+}
+.card-header {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.card-header img {
+    width: 80px;
+    height: 80px;
+}
+
+.card-header > h1 {
+    color: rgb(53, 73, 250);
+}
