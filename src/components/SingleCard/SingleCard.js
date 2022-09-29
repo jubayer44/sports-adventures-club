@@ -2,8 +2,6 @@ import React from 'react';
 import './SingleCard.css'
 
 const SingleCard = ({ sport, handleAddToCart }) => {
-
-
     const { name, img, description, followers, time } = sport;
     return (
         <div className='single-card'>

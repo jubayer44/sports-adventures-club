@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot  } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import './Home.css';
 import img from '../Images/Logo.png';
 import myPic from '../Images/myPic.jpg'
@@ -12,36 +12,39 @@ const Home = () => {
     const element = <FontAwesomeIcon icon={faLocationDot} />
     const [sportsData, setSportsData] = useState([]);
     const [cards, setCards] = useState([]);
+
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setCards(data))
-    }, [])
+    }, []);
+
     let newCart = [];
-   
+
     const handleAddToCart = (sport) => {
         const storedCart = JSON.parse(localStorage.getItem('cart'));
         setSportsData(newCart)
         if (storedCart) {
             newCart = [...storedCart, sport]
         }
+
         else {
             newCart.push(sport)
-
         }
+
         setSportsData(newCart)
         localStorage.setItem('cart', JSON.stringify(newCart))
     }
 
-    useEffect(()=> {
+    useEffect(() => {
         const cardsInLocal = JSON.parse(localStorage.getItem('cart'))
-        if(cardsInLocal){
+        if (cardsInLocal) {
             setSportsData(cardsInLocal)
         }
-        else{
+        else {
             return;
         }
-    }, [])
+    }, []);
 
     return (
         <div className='home'>

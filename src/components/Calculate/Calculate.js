@@ -1,31 +1,34 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Calculate.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Calculate = ({ sportsData }) => {
-
-
     const notify = () => toast("Congratulation Activity Completed", { position: 'top-center' });
-
-
-    const [breakTime, setBreakTime] = useState(0)
 
     let time = 0;
     for (const data of sportsData) {
 
         time = time + data.time;
-
     }
 
-    // const getStorage = JSON.parse(localStorage.getItem('cart'))
-    // console.log(getStorage);
-
+    const [breakTime, setBreakTime] = useState(0);
     const handleBreak = (e) => {
         setBreakTime((breakTime) => breakTime + parseFloat(e.target.innerText));
 
+        localStorage.setItem('break-time', JSON.stringify(+breakTime + (+e.target.innerText)))
     }
 
+
+    useEffect(() => {
+        const getBreakData = JSON.parse(localStorage.getItem('break-time'));
+        if (getBreakData) {
+            setBreakTime(getBreakData)
+        }
+        else {
+            return;
+        }
+    }, [])
 
     return (
         <div>
