@@ -1,13 +1,13 @@
-import {  useState } from 'react';
+import { useState } from 'react';
 import './Calculate.css';
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Calculate = ({ sportsData }) => {
 
-    
-        const notify = () => toast("Congratulation Activity Completed", {position: 'top-center'});
-    
+
+    const notify = () => toast("Congratulation Activity Completed", { position: 'top-center' });
+
 
     const [breakTime, setBreakTime] = useState(0)
 
@@ -17,7 +17,7 @@ const Calculate = ({ sportsData }) => {
         time = time + data.time;
 
     }
-    // const getLocalData = JSON.parse(localStorage.getItem('break-time'));
+
     const handleBreak = (e) => {
         setBreakTime((breakTime) => breakTime + parseFloat(e.target.innerText));
 

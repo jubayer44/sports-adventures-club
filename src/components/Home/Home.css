@@ -62,16 +62,16 @@
     gap: 30px;
 }
 
-/* @media screen and (max-width: 992px and min-width:767px) {
-    .home {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        background-color: red;
+.question {
+    margin: 50px 0;
+}
+.question p{
+    font-size: 20px;
+}
 
-    }
-} */
-
-
+.question ul, li {
+    font-size: 20px;
+}
 
 @media screen and (min-width:768px) and (max-width: 992px) {
     .cards-container {
