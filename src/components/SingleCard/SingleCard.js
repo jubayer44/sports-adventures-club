@@ -3,7 +3,7 @@ import './SingleCard.css'
 
 const SingleCard = ({ sport, handleAddToCart }) => {
 
-    // console.log(handleAddToCart)
+    // console.log(sport)
 
     const { name, img, description, followers, time } = sport;
     return (
@@ -15,7 +15,7 @@ const SingleCard = ({ sport, handleAddToCart }) => {
                     <p><strong>Followers : {followers}</strong></p>
                     <p><strong>Time required : {time} minutes</strong></p>
                 </div>
-                <button onClick={()=> handleAddToCart(sport)}>Add to list</button>
+                <button onClick={()=>handleAddToCart(sport)}>Add to list</button>
         </div>
     );
 };

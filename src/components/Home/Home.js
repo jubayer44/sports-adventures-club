@@ -15,15 +15,6 @@ const Home = () => {
     }, [])
 
 
-
-    // const handleAddToCart = (id) => {
-    //     const unique = cards.find(game => game.id === id)
-    //     setSportsData(unique)
-    //     // setSportsData(cards)
-    //     // setSportsData(cards)
-    //     // console.log(id, unique);
-    // }
-
     const handleAddToCart = (sport) => {
         const storedCart = JSON.parse(localStorage.getItem('cart'));
         let newCart = [];
@@ -55,9 +46,7 @@ const Home = () => {
                         cards.map(sports => <SingleCard sport={sports}
                              key={sports.id}
                              handleAddToCart={handleAddToCart}
-                             />)
-                            
-                        
+                             />) 
                     }
                     </div>
 
@@ -86,7 +75,7 @@ const Home = () => {
                     </div>
                 </div>
             <div>
-                <Calculate sportsData={sportsData}/>
+                <Calculate sportsData={sportsData} cards={cards}/>
             </div>
             </div>
         </div>
