@@ -7,6 +7,7 @@
     width: 85%;
     margin: 0 auto;
 }
+
 .card-header {
     display: flex;
     gap: 20px;
@@ -18,7 +19,7 @@
     height: 80px;
 }
 
-.card-header > h1 {
+.card-header>h1 {
     color: rgb(53, 73, 250);
 }
 
@@ -28,7 +29,7 @@
     align-items: center;
 }
 
-.person img{
+.person img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -65,11 +66,13 @@
 .question {
     margin: 50px 0;
 }
-.question p{
+
+.question p {
     font-size: 20px;
 }
 
-.question ul, li {
+.question ul,
+li {
     font-size: 20px;
 }
 
@@ -77,18 +80,20 @@
     .cards-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-    }  
-    
-       
+    }
+
+
 }
+
 @media screen and (max-width: 767px) {
     .cards-container {
         display: flex;
         flex-direction: column;
-    }  
+    }
+
     .home {
         display: flex;
         flex-direction: column-reverse;
-    } 
-       
+    }
+
 }

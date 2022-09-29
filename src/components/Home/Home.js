@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot  } from '@fortawesome/free-solid-svg-icons'
 import './Home.css';
 import img from '../Images/Logo.png';
 import myPic from '../Images/myPic.jpg'
@@ -7,6 +9,7 @@ import SingleCard from '../SingleCard/SingleCard';
 import Question from '../Question/Question';
 
 const Home = () => {
+    const element = <FontAwesomeIcon icon={faLocationDot} />
     const [cards, setCards] = useState([]);
     const [sportsData, setSportsData] = useState([]);
     useEffect(() => {
@@ -50,8 +53,8 @@ const Home = () => {
                         }
                     </div>
                     <div className='question'>
-                            <Question/>
-                        </div>
+                        <Question />
+                    </div>
                 </div>
             </div>
             <div style={{ padding: '20px' }}>
@@ -59,7 +62,7 @@ const Home = () => {
                     <img src={myPic} alt="" />
                     <div>
                         <h3>Jubayer Ahmed</h3>
-                        <p>Sylhet, Bangladesh</p>
+                        <p>{element} Sylhet, Bangladesh</p>
                     </div>
                 </div>
                 <div className='person-info'>
