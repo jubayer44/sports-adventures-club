@@ -6,7 +6,7 @@ const Question = () => {
             <h1 style={{ textAlign: 'center' }}>Question and Answer</h1>
             <div>
                 <h2>How does React work?</h2>
-                <p>React is a JavaScript library developed by Facebook which, among other things, was used to build Instagram.com. Its aim is to allow developers to easily create fast user interfaces for websites and applications alike. The main concept of React.js is virtual DOM. It is a tree based on JavaScript components created with React that mimics a DOM tree. It does the least amount of DOM manipulation possible in order to keep your React components up to date.</p>
+                <p>React is a JavaScript library developed by Facebook which, among other things, was used to build Instagram. Its aim is to allow developers to easily create fast user interfaces for websites and applications alike. The main concept of React.js is virtual DOM. It is a tree based on JavaScript components created with React that mimics a DOM tree. It does the least amount of DOM manipulation possible in order to keep your React components up to date.</p>
             </div>
 
             <div>
