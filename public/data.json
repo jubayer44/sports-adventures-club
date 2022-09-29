@@ -7,7 +7,7 @@
         "description": "Over 2.5 billion people throughout the world follow cricket. England, India, Pakistan, and Australia are some of the countries where the game is most popular. There are two teams, a bat, a huge circular field, and scoring runs much as in baseball.",
         
         "followers": "2.5 Billion",
-        "time": 30
+        "time": 40
     },
     {
         "name": "Football",
@@ -43,7 +43,7 @@
 
         "description": "Tennis is played by an estimated 60 million men and women worldwide, according to a list by Topend Sports, making it the most popular individual sport in the world. Due to its widespread acceptance, the sport's doubles form is also prevalent in many countries.",
         "followers": "1 Billion",
-        "time": 20
+        "time": 25
     },
     {
         "name": "Badminton",
