@@ -10,18 +10,17 @@ import Question from '../Question/Question';
 
 const Home = () => {
     const element = <FontAwesomeIcon icon={faLocationDot} />
-    const [cards, setCards] = useState([]);
     const [sportsData, setSportsData] = useState([]);
+    const [cards, setCards] = useState([]);
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setCards(data))
     }, [])
-
-
+    let newCart = [];
+   
     const handleAddToCart = (sport) => {
         const storedCart = JSON.parse(localStorage.getItem('cart'));
-        let newCart = [];
         setSportsData(newCart)
         if (storedCart) {
             newCart = [...storedCart, sport]
@@ -34,6 +33,15 @@ const Home = () => {
         localStorage.setItem('cart', JSON.stringify(newCart))
     }
 
+    useEffect(()=> {
+        const cardsInLocal = JSON.parse(localStorage.getItem('cart'))
+        if(cardsInLocal){
+            setSportsData(cardsInLocal)
+        }
+        else{
+            return;
+        }
+    }, [])
 
     return (
         <div className='home'>
@@ -88,5 +96,3 @@ const Home = () => {
 };
 
 export default Home;
-
-

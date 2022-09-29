@@ -18,6 +18,9 @@ const Calculate = ({ sportsData }) => {
 
     }
 
+    // const getStorage = JSON.parse(localStorage.getItem('cart'))
+    // console.log(getStorage);
+
     const handleBreak = (e) => {
         setBreakTime((breakTime) => breakTime + parseFloat(e.target.innerText));
 
