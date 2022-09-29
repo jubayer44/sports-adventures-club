@@ -1,11 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 import img from '../Images/Logo.png';
 import myPic from '../Images/myPic.jpg'
-import Card from '../Card/Card';
 import Calculate from '../Calculate/Calculate';
+import SingleCard from '../SingleCard/SingleCard';
 
 const Home = () => {
+    const [cards, setCards] = useState([]);
+    const [sportsData, setSportsData] = useState([]);
+    useEffect(() => {
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setCards(data))
+    }, [])
+
+
+
+    // const handleAddToCart = (id) => {
+    //     const unique = cards.find(game => game.id === id)
+    //     setSportsData(unique)
+    //     // setSportsData(cards)
+    //     // setSportsData(cards)
+    //     // console.log(id, unique);
+    // }
+
+    const handleAddToCart = (sport) => {
+        const storedCart = JSON.parse(localStorage.getItem('cart'));
+        let newCart = [];
+        setSportsData(newCart)
+        if(storedCart){
+            newCart = [...storedCart, sport]
+        }
+        else {
+            newCart.push(sport)
+            
+        }
+        setSportsData(newCart)
+        localStorage.setItem('cart', JSON.stringify(newCart))
+    }
+
+
     return (
         <div className='home'>
             <div style={{ backgroundColor: 'rgb(219, 219, 219)' }}>
@@ -15,7 +49,18 @@ const Home = () => {
                         <h1>SPORTS-ADVENTURES-CLUB</h1>
                     </div>
                     <h2>Select Today's Game...</h2>
-                    <Card />
+                    {/* <Card /> */}
+                    <div className='cards-container'>
+                    {
+                        cards.map(sports => <SingleCard sport={sports}
+                             key={sports.id}
+                             handleAddToCart={handleAddToCart}
+                             />)
+                            
+                        
+                    }
+                    </div>
+
                 </div>
             </div>
             <div style={{padding: '20px'}}>
@@ -41,7 +86,7 @@ const Home = () => {
                     </div>
                 </div>
             <div>
-                <Calculate/>
+                <Calculate sportsData={sportsData}/>
             </div>
             </div>
         </div>
